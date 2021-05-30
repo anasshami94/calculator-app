@@ -27,7 +27,11 @@ btns.forEach((btn) => {
                 break;
             
             case '=':
-                screen.value = eval(screen.value)
+                try {
+                    screen.value = eval(screen.value)
+                } catch(e) {
+                    alert("can't perform this operation " + e.message)
+                }
                 break;
             case 'x':
                 screen.value += '*'
