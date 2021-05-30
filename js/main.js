@@ -23,12 +23,14 @@ btns.forEach((btn) => {
                 screen.value = screen.value.slice(0, -1)
                 break;
             case 'RESET':
-                screen.value("")
+                screen.value = ""
                 break;
             
             case '=':
                 screen.value = eval(screen.value)
                 break;
+            case 'x':
+                screen.value += '*'
             default:
                 screen.value = screen.value + value
         }
