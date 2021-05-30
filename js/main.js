@@ -31,6 +31,7 @@ btns.forEach((btn) => {
                 break;
             case 'x':
                 screen.value += '*'
+                break;
             default:
                 screen.value = screen.value + value
         }
